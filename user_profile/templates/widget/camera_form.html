@@ -1,0 +1,13 @@
+<br />
+
+<div>
+    <input id="{{ widget.name }}" type="hidden" name="{{ widget.name }}">
+    <button onclick="openCameraModal({label: '{{ widget.name }}'})" type="button" class="btn btn-primary" data-toggle="modal" data-target="#camera_modal">
+        Take a photo
+    </button>
+    <button disabled id="{{ widget.name }}_result" onclick="openResult({label: '{{ widget.name }}'})" type="button" class="btn btn-primary" data-toggle="modal" data-target="#camera_result_modal">
+        view
+    </button>
+</div>
+
+<br />

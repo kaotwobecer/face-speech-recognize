@@ -1,0 +1,27 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Login success!</h4>
+                
+                {% if username_login %}
+                    <p>Login by username: {{ user.username }}</p>
+                {% else %}
+                    <p>Login profile: {{ user.username }}</p>
+                    <p>Face confident score : {{ face_score|floatformat:2 }} %</p>
+                    <p>speech confident score : {{ speech_score|floatformat:2 }} %</p>
+                    <hr />
+                    <p>Total score: {{ total_score|floatformat:2 }} %</p>
+                {% endif %}
+
+                <a class="btn btn-info" href="{% url 'home' %}">Process to home</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+

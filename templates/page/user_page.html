@@ -1,0 +1,12 @@
+{% extends "layout/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+        <div class=" row justify-content-center">
+            {{ google_form.embed_url|safe }}
+        </div>
+    </div>
+
+{% endblock %}

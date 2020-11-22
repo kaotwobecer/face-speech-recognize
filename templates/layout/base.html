@@ -1,0 +1,22 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% include 'common/css.html' %}
+    <title>{{ title }}</title>
+</head>
+<body>
+{% include 'common/component/nav.html' %}
+<div class="container-fluid low-margin h-50">
+    {% block content %} {% endblock %}
+</div>
+
+
+{% include 'common/js.html' %}
+</body>
+</html>
