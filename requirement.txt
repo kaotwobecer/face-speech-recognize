@@ -1,4 +1,5 @@
 asgiref==3.2.7
+gunicorn==19.9.0
 audioread==2.1.8
 cffi==1.14.0
 cryptography==2.9.2
